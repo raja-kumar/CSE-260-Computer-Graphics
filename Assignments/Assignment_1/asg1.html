@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <!--- <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    --->
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+
+    <script src="./circle.js"></script>
+    <script src="./triangle.js"></script>
+    <script src="./point.js"></script>
+    <script src="./coloredPoints.js"></script>
+
+    <div>
+        <input type="button" value="clear canvas" onclick="clearCanvas()">
+        <br>
+
+        <button type="button" id="point">point</button>
+        <button type="button" id="triangle">triangle</button>
+        <button type="button" id="circle">circle</button>
+
+        <br>
+
+        Shape Color:
+        <br>
+
+        <label for="redS">Red</label>
+        <input type="range" id="redS"
+               min="0" max="20">
+        <label>Blue</label>
+        <input type="range" id="blueS" 
+                min="0" max="20">
+        <label >Green</label>
+        <input type="range" id="greenS"
+                min="0" max="20">
+
+        <br>
+        <br>
+        <br>
+
+        <label>shape size</label>
+        <input type="range" id="size"
+               min="0" max="20">
+        
+        <label>segment count</label>
+        <input type="range" id="seg_count"
+        min="0" max="20">
+
+        <br>
+
+        <input type="button" value="draw drawing" onclick="drawing()">
+
+    </div>
+  </body>
+</html>
