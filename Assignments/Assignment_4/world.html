@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>blocky world</title>
+    <link rel="shortcut icon" href="#">
+  </head>
+ 
+  <body onload="main()">
+    <canvas id="webgl" width="500" height="500">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="./lib/cuon-matrix-cse160.js"></script>
+
+    <script src="./circle.js"></script>
+    <script src="./triangle.js"></script>
+    <script src="./point.js"></script>
+    <script src="./cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="./tetrahedron.js"></script>
+    <script src="./world.js"></script>
+    <script src="sphere.js"></script>
+
+
+    <div>
+      <p id="fps"></p>
+
+      <button type="button" id="normalOn">Normal ON</button>
+      <button type="button" id="normalOff">Normal OFF</button>
+      
+      <br>
+
+      <button type="button" id="lightOn">Light ON</button>
+      <button type="button" id="lightOff">Light OFF</button>
+
+      <br>
+
+      <button type="button" id="movelightOn">Move light ON</button>
+      <button type="button" id="movelightOff">Move light OFF</button>
+
+      <br>
+
+        <label>Light X</label>
+        <input type="range" id="lightSlideX"
+        min="-320" max="320">
+
+
+        <label>Light Y</label>
+        <input type="range" id="lightSlideY"
+        min="-320" max="320">
+
+        <label>Light Z</label>
+        <input type="range" id="lightSlideZ"
+        min="-320" max="320">
+
+      <br>
+
+        <label>camera angle X</label>
+        <input type="range" id="camera_angle_x"
+        min="-180" max="180">
+
+        <br>
+
+        <label>camera angle Y</label>
+        <input type="range" id="camera_angle_y"
+        min="-180" max="180">
+        <br>
+
+        <br>
+
+        <label>Animation</label>
+        <button type="button" id="namasteOn">On</button>
+        <button type="button" id="namasteOff">Off</button>
+        <!--- <input type="button" value="Namaste" onclick=handAnimate()>  --->
+    </div>
+  </body>
+</html>
