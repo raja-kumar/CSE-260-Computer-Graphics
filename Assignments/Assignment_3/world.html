@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>blocky world</title>
+    <link rel="shortcut icon" href="#">
+  </head>
+ 
+  <body onload="main()">
+    <canvas id="webgl" width="700" height="700">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="./lib/cuon-matrix-cse160.js"></script>
+
+    <script src="./circle.js"></script>
+    <script src="./triangle.js"></script>
+    <script src="./point.js"></script>
+    <script src="./cube.js"></script>
+    <script src="Camera.js"></script>
+    <script src="./tetrahedron.js"></script>
+    <script src="./world.js"></script>
+
+    <div>
+      <p id="fps"></p>
+        <label>camera angle X</label>
+        <input type="range" id="camera_angle_x"
+        min="-180" max="180">
+
+        <br>
+
+        <label>camera angle Y</label>
+        <input type="range" id="camera_angle_y"
+        min="-180" max="180">
+        <br>
+
+        <!---<label >Yellow</label>
+        <input type="range" id="yellow_angle"
+                min="-45" max="45">
+        
+        <button type="button" id="animationYellowOn">ON</button>
+        <button type="button" id="animationYellowOff">OFF</button>
+        <br>
+
+        <label >Magenta</label>
+        <input type="range" id="mgt_angle"
+                min="-45" max="45">
+        <button type="button" id="animationMgtOn">ON</button>
+        <button type="button" id="animationMgtOff">OFF</button>
+
+        <br> --->
+
+        <label>Animation</label>
+        <button type="button" id="namasteOn">On</button>
+        <button type="button" id="namasteOff">Off</button>
+        <!--- <input type="button" value="Namaste" onclick=handAnimate()>  --->
+    </div>
+  </body>
+</html>
